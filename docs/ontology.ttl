@@ -1,0 +1,42 @@
+      @prefix ds: <http://demo.staple-api.org/ontology.ttl#> .
+      @prefix dbo: <http://ab.org/ontology/> .
+      @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+      @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+      @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+      @prefix owl: <http://www.w3.org/2002/07/owl#> .
+      @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+      @prefix dct: <http://purl.org/dc/terms/> .
+      @prefix schema: <http://schema.org/> .
+      
+
+
+      # classes (-> GraphQL types )
+
+      owl:Thing a rdfs:Class ;
+          rdfs:comment "Anything" .
+
+      dbo:Subject a rdfs:Class ;
+          rdfs:comment "A subject" ;
+          rdfs:subClassOf owl:Thing .
+
+      # properties ( -> GraphQL fields )
+
+      rdfs:label a rdf:Property, owl:FunctionalProperty ;
+          rdfs:comment "Name of the entity" ;
+          schema:domainIncludes owl:Thing ;
+          schema:rangeIncludes xsd:string .
+
+      dct:description a rdf:Property, owl:FunctionalProperty ;
+          rdfs:comment "Description of a subject" ;
+          schema:domainIncludes dbo:Subject ;
+          schema:rangeIncludes xsd:string .
+
+      dbo:mouse a rdf:Property ;
+          rdfs:comment "A spouse of a subject" ;
+          schema:domainIncludes dbo:Subject ;
+          schema:rangeIncludes dbo:Subject .
+
+      dbo:thumbnail a rdf:Property, owl:FunctionalProperty ;
+          rdfs:comment "Thumbnail URL" ;
+          schema:domainIncludes dbo:Subject ;
+          schema:rangeIncludes xsd:string .
