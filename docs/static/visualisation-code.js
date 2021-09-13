@@ -111,10 +111,6 @@ function visualise(parent, relation, entity) {
                 from: vertices[1],
                 to: vertices[0],
                 label: relation,
-                arrows: {
-                    from: true,
-                    to: false
-                },
                 color: {
                     color: '#543A71',
                     hover: "#A573DC",
