@@ -19,23 +19,23 @@ dbo:Subject a rdfs:Class ;  rdfs:comment "A subject" ;  rdfs:subClassOf owl:Thin
 rdfs:label a rdf:Property, owl:FunctionalProperty ;  rdfs:comment "Name of the entity" ;  schema:domainIncludes owl:Thing ;  schema:rangeIncludes xsd:string .
                                                                                                                                                                     
 
-dbo:reduce a rdf:Property ; rdfs:comment "property reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:reduce a rdf:Property ; rdfs:comment "property reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:be good vaccination a rdf:Property ; rdfs:comment "property be good vaccination" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:BeGoodVaccination a rdf:Property ; rdfs:comment "property BeGoodVaccination" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:social control a rdf:Property ; rdfs:comment "property social control" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:SocialControl a rdf:Property ; rdfs:comment "property SocialControl" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:control a rdf:Property ; rdfs:comment "property control" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:Control a rdf:Property ; rdfs:comment "property Control" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:increase a rdf:Property ; rdfs:comment "property increase" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:Increase a rdf:Property ; rdfs:comment "property Increase" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:reduce a rdf:Property ; rdfs:comment "property reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
