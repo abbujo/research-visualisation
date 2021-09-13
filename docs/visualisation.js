@@ -1,5 +1,5 @@
-query1 =(parent)=>'{ Subject(filter: { _id:"' + parent + '"}){ _id reduce { _id _type label } reduce { _id _type label } be good vaccination { _id _type label } social control { _id _type label } control { _id _type label } increase { _id _type label } reduce { _id _type label } }}'
-query2 = (topic) => '{ _CONTEXT { _id _type Subject label } Subject(filter:{_id: ["' + topic.map(function (item) { return '"' + item + '"' }) +']}){ _id _type label reduce { _id } reduce { _id } be good vaccination { _id } social control { _id } control { _id } increase { _id } reduce { _id } }}'
+query1 =(parent)=>'{ Subject(filter: { _id:"' + parent + '"}){ _id Reduce { _id _type label } Reduce { _id _type label } BeGoodVaccination { _id _type label } SocialControl { _id _type label } Control { _id _type label } Increase { _id _type label } Reduce { _id _type label } }}'
+query2 = (topic) => '{ _CONTEXT { _id _type Subject label } Subject(filter:{_id: ["' + topic.map(function (item) { return '"' + item + '"' }) +']}){ _id _type label Reduce { _id } Reduce { _id } BeGoodVaccination { _id } SocialControl { _id } Control { _id } Increase { _id } Reduce { _id } }}'
 var apiUri = ""
 
 var nodes, edges, network;
