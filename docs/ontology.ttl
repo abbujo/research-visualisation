@@ -34,8 +34,104 @@ dbo:SocialControl a rdf:Property ; rdfs:comment "property SocialControl" ; schem
 dbo:Control a rdf:Property ; rdfs:comment "property Control" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:Increase a rdf:Property ; rdfs:comment "property Increase" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:Nominate a rdf:Property ; rdfs:comment "property Nominate" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Meet a rdf:Property ; rdfs:comment "property Meet" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:ApplyShare a rdf:Property ; rdfs:comment "property ApplyShare" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Minimize a rdf:Property ; rdfs:comment "property Minimize" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Protect a rdf:Property ; rdfs:comment "property Protect" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
 dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Follow a rdf:Property ; rdfs:comment "property Follow" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:PayLess a rdf:Property ; rdfs:comment "property PayLess" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Wear a rdf:Property ; rdfs:comment "property Wear" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Give a rdf:Property ; rdfs:comment "property Give" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Carry a rdf:Property ; rdfs:comment "property Carry" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:WearPrivate a rdf:Property ; rdfs:comment "property WearPrivate" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Test a rdf:Property ; rdfs:comment "property Test" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:IndoorAvoidBy a rdf:Property ; rdfs:comment "property IndoorAvoidBy" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:ResumeNormal a rdf:Property ; rdfs:comment "property ResumeNormal" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Visit a rdf:Property ; rdfs:comment "property Visit" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:SpreadByInfected a rdf:Property ; rdfs:comment "property SpreadByInfected" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:AvoidClose a rdf:Property ; rdfs:comment "property AvoidClose" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Wash a rdf:Property ; rdfs:comment "property Wash" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Isolate a rdf:Property ; rdfs:comment "property Isolate" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Be a rdf:Property ; rdfs:comment "property Be" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Persist a rdf:Property ; rdfs:comment "property Persist" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Wash a rdf:Property ; rdfs:comment "property Wash" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Isolate a rdf:Property ; rdfs:comment "property Isolate" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:AvoidClose a rdf:Property ; rdfs:comment "property AvoidClose" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Do a rdf:Property ; rdfs:comment "property Do" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Avoid a rdf:Property ; rdfs:comment "property Avoid" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:CloseLeave a rdf:Property ; rdfs:comment "property CloseLeave" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Continue a rdf:Property ; rdfs:comment "property Continue" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:PrimaryCloseIsolate a rdf:Property ; rdfs:comment "property PrimaryCloseIsolate" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Cause a rdf:Property ; rdfs:comment "property Cause" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:RegularBe a rdf:Property ; rdfs:comment "property RegularBe" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:Consult a rdf:Property ; rdfs:comment "property Consult" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
