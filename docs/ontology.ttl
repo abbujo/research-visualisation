@@ -34,6 +34,9 @@ dbo:SocialControl a rdf:Property ; rdfs:comment "property SocialControl" ; schem
 dbo:Control a rdf:Property ; rdfs:comment "property Control" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
+dbo:PregnantBe a rdf:Property ; rdfs:comment "property PregnantBe" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
 dbo:Nominate a rdf:Property ; rdfs:comment "property Nominate" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
@@ -55,7 +58,7 @@ dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainInclud
 dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:Follow a rdf:Property ; rdfs:comment "property Follow" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:FollowCovid a rdf:Property ; rdfs:comment "property FollowCovid" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
 dbo:PayLess a rdf:Property ; rdfs:comment "property PayLess" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
