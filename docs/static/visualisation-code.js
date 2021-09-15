@@ -6,10 +6,6 @@ var instructionText = 'Click on nodes to <b>find related entities</b>. CTRL+clic
 var retrievalText = "Retrieving data. Please wait...";
 var noMoreDataText = "No more data found...";
 
-function randomString(length) {
-    return Math.round((Math.pow(36, length + 1) - Math.random() * Math.pow(36, length))).toString(36).slice(1);
-}
-
 var HttpClient = function() {
     this.get = function(url, aCallback) {
         var xhr = new XMLHttpRequest();
@@ -40,7 +36,7 @@ function start() {
     var uriEncoded = location.search.split('uri=')[1];
 
     if (uriEncoded==null) {
-        param = "https://research-wiki.web.app/data/sanitizers"
+        param = "https://research-wiki.web.app/data/Person"
     } else {
         param = decodeURI(uriEncoded)
     }
@@ -107,7 +103,7 @@ function visualise(parent, relation, entity) {
             var vertices = [entity._id, parent];
             vertices.sort();
             edge = {
-                id: randomString(20),
+                id: vertices[0] + relation + vertices[1],
                 from: vertices[1],
                 to: vertices[0],
                 label: relation,
@@ -255,7 +251,7 @@ function draw() {
           });
 
           $('#names_box').select2({
-            minimumInputLength: 4
+            minimumInputLength: 2
           });
     });
 
