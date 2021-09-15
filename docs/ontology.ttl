@@ -34,7 +34,7 @@ dbo:SocialControl a rdf:Property ; rdfs:comment "property SocialControl" ; schem
 dbo:Control a rdf:Property ; rdfs:comment "property Control" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:PregnantBe a rdf:Property ; rdfs:comment "property PregnantBe" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:GivePregnant a rdf:Property ; rdfs:comment "property GivePregnant" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
 dbo:Nominate a rdf:Property ; rdfs:comment "property Nominate" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
@@ -118,7 +118,7 @@ dbo:AvoidClose a rdf:Property ; rdfs:comment "property AvoidClose" ; schema:doma
 dbo:Do a rdf:Property ; rdfs:comment "property Do" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:Avoid a rdf:Property ; rdfs:comment "property Avoid" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:ShouldMake a rdf:Property ; rdfs:comment "property ShouldMake" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
 dbo:CloseLeave a rdf:Property ; rdfs:comment "property CloseLeave" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
