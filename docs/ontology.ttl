@@ -22,9 +22,6 @@ rdfs:label a rdf:Property, owl:FunctionalProperty ;  rdfs:comment "Name of the e
 dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
-
-
 dbo:BeGoodVaccination a rdf:Property ; rdfs:comment "property BeGoodVaccination" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
@@ -50,12 +47,6 @@ dbo:Minimize a rdf:Property ; rdfs:comment "property Minimize" ; schema:domainIn
 
 
 dbo:Protect a rdf:Property ; rdfs:comment "property Protect" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
-
-
-dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
-
-
-dbo:Reduce a rdf:Property ; rdfs:comment "property Reduce" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
 dbo:FollowCovid a rdf:Property ; rdfs:comment "property FollowCovid" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
@@ -106,19 +97,7 @@ dbo:Be a rdf:Property ; rdfs:comment "property Be" ; schema:domainIncludes dbo:S
 dbo:Persist a rdf:Property ; rdfs:comment "property Persist" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:Wash a rdf:Property ; rdfs:comment "property Wash" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
-
-
-dbo:Isolate a rdf:Property ; rdfs:comment "property Isolate" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
-
-
-dbo:AvoidClose a rdf:Property ; rdfs:comment "property AvoidClose" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
-
-
 dbo:Do a rdf:Property ; rdfs:comment "property Do" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
-
-
-dbo:ShouldMake a rdf:Property ; rdfs:comment "property ShouldMake" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
 dbo:CloseLeave a rdf:Property ; rdfs:comment "property CloseLeave" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
