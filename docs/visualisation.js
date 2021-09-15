@@ -1,5 +1,5 @@
-query1 =(parent)=>'{ Subject(filter: { _id:"' + parent + '"}){ _id Reduce { _id _type label } BeGoodVaccination { _id _type label } SocialControl { _id _type label } Control { _id _type label } GivePregnant { _id _type label } Nominate { _id _type label } Meet { _id _type label } ApplyShare { _id _type label } Minimize { _id _type label } Protect { _id _type label } FollowCovid { _id _type label } PayLess { _id _type label } Wear { _id _type label } Give { _id _type label } Carry { _id _type label } WearPrivate { _id _type label } Test { _id _type label } IndoorAvoidBy { _id _type label } ResumeNormal { _id _type label } Visit { _id _type label } SpreadByInfected { _id _type label } AvoidClose { _id _type label } Wash { _id _type label } Isolate { _id _type label } Be { _id _type label } Persist { _id _type label } Do { _id _type label } CloseLeave { _id _type label } Continue { _id _type label } PrimaryCloseIsolate { _id _type label } Cause { _id _type label } RegularBe { _id _type label } Consult { _id _type label } }}'
-query2 = (topic) => '{ _CONTEXT { _id _type Subject label } Subject(filter:{_id: ["' + topic.map(function (item) { return '"' + item + '"' }) +']}){ _id _type label Reduce { _id } BeGoodVaccination { _id } SocialControl { _id } Control { _id } GivePregnant { _id } Nominate { _id } Meet { _id } ApplyShare { _id } Minimize { _id } Protect { _id } FollowCovid { _id } PayLess { _id } Wear { _id } Give { _id } Carry { _id } WearPrivate { _id } Test { _id } IndoorAvoidBy { _id } ResumeNormal { _id } Visit { _id } SpreadByInfected { _id } AvoidClose { _id } Wash { _id } Isolate { _id } Be { _id } Persist { _id } Do { _id } CloseLeave { _id } Continue { _id } PrimaryCloseIsolate { _id } Cause { _id } RegularBe { _id } Consult { _id } }}'
+query1 =(parent)=>'{ Subject(filter: { _id:"' + parent + '"}){ _id Reduce { _id _type label } BeGoodVaccination { _id _type label } SocialControl { _id _type label } Control { _id _type label } GivePregnant { _id _type label } Nominate { _id _type label } Meet { _id _type label } NotApplyShare { _id _type label } Minimize { _id _type label } Protect { _id _type label } FollowCovid { _id _type label } PayLess { _id _type label } Wear { _id _type label } Give { _id _type label } Carry { _id _type label } WearPrivate { _id _type label } Test { _id _type label } IndoorAvoidBy { _id _type label } NotResumeNormal { _id _type label } Visit { _id _type label } SpreadByInfected { _id _type label } AvoidClose { _id _type label } Wash { _id _type label } Expose { _id _type label } Persist { _id _type label } Do { _id _type label } Transact { _id _type label } NotCloseLeave { _id _type label } Continue { _id _type label } PrimaryCloseIsolate { _id _type label } Cause { _id _type label } RegularBe { _id _type label } Consult { _id _type label } }}'
+query2 = (topic) => '{ _CONTEXT { _id _type Subject label } Subject(filter:{_id: ["' + topic.map(function (item) { return '"' + item + '"' }) +']}){ _id _type label Reduce { _id } BeGoodVaccination { _id } SocialControl { _id } Control { _id } GivePregnant { _id } Nominate { _id } Meet { _id } NotApplyShare { _id } Minimize { _id } Protect { _id } FollowCovid { _id } PayLess { _id } Wear { _id } Give { _id } Carry { _id } WearPrivate { _id } Test { _id } IndoorAvoidBy { _id } NotResumeNormal { _id } Visit { _id } SpreadByInfected { _id } AvoidClose { _id } Wash { _id } Expose { _id } Persist { _id } Do { _id } Transact { _id } NotCloseLeave { _id } Continue { _id } PrimaryCloseIsolate { _id } Cause { _id } RegularBe { _id } Consult { _id } }}'
 var apiUri = ""
 
 var nodes, edges, network;
@@ -7,10 +7,6 @@ var nodes, edges, network;
 var instructionText = 'Click on nodes to <b>find related entities</b>. CTRL+click to <b>go to Wikipedia</b>. SHIFT+click to <b>collapse nodes</b>.'
 var retrievalText = "Retrieving data. Please wait...";
 var noMoreDataText = "No more data found...";
-
-function randomString(length) {
-    return Math.round((Math.pow(36, length + 1) - Math.random() * Math.pow(36, length))).toString(36).slice(1);
-}
 
 var HttpClient = function() {
     this.get = function(url, aCallback) {
@@ -42,7 +38,7 @@ function start() {
     var uriEncoded = location.search.split('uri=')[1];
 
     if (uriEncoded==null) {
-        param = "https://research-wiki.web.app/data/sanitizers"
+        param = "https://research-wiki.web.app/data/Person"
     } else {
         param = decodeURI(uriEncoded)
     }
@@ -109,7 +105,7 @@ function visualise(parent, relation, entity) {
             var vertices = [entity._id, parent];
             vertices.sort();
             edge = {
-                id: randomString(20),
+                id: vertices[0] + relation + vertices[1],
                 from: vertices[1],
                 to: vertices[0],
                 label: relation,
@@ -257,7 +253,7 @@ function draw() {
           });
 
           $('#names_box').select2({
-            minimumInputLength: 4
+            minimumInputLength: 2
           });
     });
 
