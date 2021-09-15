@@ -40,7 +40,7 @@ dbo:Nominate a rdf:Property ; rdfs:comment "property Nominate" ; schema:domainIn
 dbo:Meet a rdf:Property ; rdfs:comment "property Meet" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:ApplyShare a rdf:Property ; rdfs:comment "property ApplyShare" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:NotApplyShare a rdf:Property ; rdfs:comment "property NotApplyShare" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
 dbo:Minimize a rdf:Property ; rdfs:comment "property Minimize" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
@@ -73,7 +73,7 @@ dbo:Test a rdf:Property ; rdfs:comment "property Test" ; schema:domainIncludes d
 dbo:IndoorAvoidBy a rdf:Property ; rdfs:comment "property IndoorAvoidBy" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:ResumeNormal a rdf:Property ; rdfs:comment "property ResumeNormal" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:NotResumeNormal a rdf:Property ; rdfs:comment "property NotResumeNormal" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
 dbo:Visit a rdf:Property ; rdfs:comment "property Visit" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
@@ -88,10 +88,7 @@ dbo:AvoidClose a rdf:Property ; rdfs:comment "property AvoidClose" ; schema:doma
 dbo:Wash a rdf:Property ; rdfs:comment "property Wash" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:Isolate a rdf:Property ; rdfs:comment "property Isolate" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
-
-
-dbo:Be a rdf:Property ; rdfs:comment "property Be" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:Expose a rdf:Property ; rdfs:comment "property Expose" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
 dbo:Persist a rdf:Property ; rdfs:comment "property Persist" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
@@ -100,7 +97,10 @@ dbo:Persist a rdf:Property ; rdfs:comment "property Persist" ; schema:domainIncl
 dbo:Do a rdf:Property ; rdfs:comment "property Do" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
-dbo:CloseLeave a rdf:Property ; rdfs:comment "property CloseLeave" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+dbo:Transact a rdf:Property ; rdfs:comment "property Transact" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
+
+
+dbo:NotCloseLeave a rdf:Property ; rdfs:comment "property NotCloseLeave" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
 
 
 dbo:Continue a rdf:Property ; rdfs:comment "property Continue" ; schema:domainIncludes dbo:Subject ; schema:rangeIncludes dbo:Subject .
